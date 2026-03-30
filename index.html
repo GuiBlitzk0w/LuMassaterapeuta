@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lu Massaterapeuta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav class="navbar">
+  <h2 class="logo">Lu Massaterapeuta</h2>
+
+  <ul class="menu">
+    <li><a href="#">Início</a></li>
+    <li><a href="#servicos">Atendimentos</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a class="btn-nav" href="https://wa.me/SEUNUMERO">Agendar</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Lu Massaterapeuta</h1>
+  <p>Cuidado para o corpo, equilíbrio para a mente 🌿</p>
+  <a class="btn" href="https://wa.me/SEUNUMERO">Agendar pelo WhatsApp</a>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section">
+  <h2>Atendimentos</h2>
+
+  <div class="cards">
+    <div class="card" onclick="toggleDesc(this)">💆 Massagem Relaxante
+        <p class="desc">Indicada para aliviar o estresse, relaxar o corpo e melhorar o bem-estar geral.</p>
+    </div>
+     <div class="card" onclick="toggleDesc(this)">💪 Massagem Terapêutica
+        <p class="desc">Focada em dores musculares, tensões e recuperações do corpo.</p>
+     </div>
+     <div class="card" onclick="toggleDesc(this)">🩺 Pós-operatório
+        <p class="desc">Auxilia na recuperação, reduz inchaço e melhora a circulação.</p>
+     </div>
+     <div class="card" onclick="toggleDesc(this)">🔄 Liberação Muscular
+        <p class="desc"> Remive pontos de tensão e melhora a mobilidade muscular.</p>
+     </div>
+     <div class="card" onclick="toggleDesc(this)">🌊 Drenagem Linfática
+         <p class="desc"> Reduz retenção de líquidos e ajuda na desintoxicação do organismo.</p>
+     </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section">
+  <h2>Sobre</h2>
+  <p>
+  Sou a Lu, massoterapeuta dedicada ao seu bem-estar, com atendimentos personalizados e realizados no conforto da sua casa.
+  </p>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="section">
+  <h2>Contato</h2>
+  <a class="btn" href="https://wa.me/SEUNUMERO">Falar no WhatsApp</a>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+  <p>© 2026 - Lu Massaterapeuta</p>
+</footer>
+
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/41996946499" class="whatsapp">💬</a>
+
+<script>
+function toggleDesc(card) {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(c => {
+    if (c !== card) {
+      c.classList.remove("active"); // fecha os outros
+    }
+  });
+
+  card.classList.toggle("active"); // abre o clicado
+}
+</script>
+
+</body>
+</html>
