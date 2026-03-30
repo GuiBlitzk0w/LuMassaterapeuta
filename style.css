@@ -1,0 +1,151 @@
+body {
+  background-color:  rgb(230, 211, 211);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.3);
+}
+
+.logo {
+  color:  rgb(243, 205, 205);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* botão do menu */
+.btn-nav {
+  background: #25d366;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+
+  background-image: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),
+  url("https://images.openai.com/static-rsc-4/MAk0-IR8dpvYI2ksdZacyTL2SLo9B33uqEm5k7Z5QZrYB7B4QGq1NT2vi4jeQ7Vt4LXX7q2J5JnV7xMHu0U6E1NtTDSl-6Rqb7aS5Yh76Ip6Ar8O7f_TnKbQlxILkspyDQalZH-0gqB7KxZT5IGotls6dh3BGQn0oFGqoFL1iYYsEfTc_4LawAO5JGZ84CBE?purpose=fullsize");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: rgb(243, 205, 205);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero h1, .hero p {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* BOTÕES */
+.btn {
+  background: #25d366;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SEÇÕES */
+.section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #f5f5f5;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.destaque {
+  background: #dff5e1;
+}
+
+/* RODAPÉ */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* BOTÃO FLUTUANTE */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
+.desc {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* quando estiver ativo */
+.card.active .desc {
+  display: block;
+}
+
+/* efeito de clique */
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
